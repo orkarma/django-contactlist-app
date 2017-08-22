@@ -1,5 +1,7 @@
-<ul>
-  {% for contact in contacts %}
-  <li> {{contact.Name}} </li>
-  {% endfor %}
-</ul>
+{% include 'partials/header.html' %}
+    <ul>
+      {% for contact in contacts %}
+      <li><a href="/contacts/details/{{contact.id}}">{{contact.Name}}</a></li>
+      {% endfor %}
+    </ul>
+{% include 'partials/footer.html' %}
