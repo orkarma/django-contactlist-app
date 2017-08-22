@@ -1,9 +1,16 @@
 {% include 'partials/header.html' %}
 
-test text aaaaa
-
-  <h1>{{contact.Name}}</h1>
-  <p>{{contact.Adress}}</p>
+  <li>Date Added to System: {{contact.Date_Added_to_System}}</li>
+  <h2>{{contact.Name}}</h2>
+  <li>Department: {{contact.Department}}</li>
+  <li>Manager: {{contact.Manager}}</li>
   <br>
+  <li>Work Contact Number: {{contact.Work_Contact_Number}}</li>
+  <li>Personal Contact Number: {{contact.Personal_Contact_Number}}</li>
+  <br>
+  <li>Work Email: {{contact.Work_Email}}</li>
+  <li>Personal Email: {{contact.Personal_Email}}</li>
+  <br>
+  <p>Adress: {{contact.Adress}}</p>
 
 {% include 'partials/footer.html' %}
