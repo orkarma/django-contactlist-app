@@ -15,10 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from contacts import views as contacts_views
 
 urlpatterns = [
-    #url(r'^$', include('contacts.urls')),
+    #url(r'^$', contacts.views.splash, name='splash'),
+    #url(r'^$', 'contacts.views.splash', name='home'),
     url(r'^contacts/', include('contacts.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^$', contacts_views.splash),
     #url(r'^search/', include('search.urls'))
 ]

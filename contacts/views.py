@@ -7,8 +7,12 @@ from django.http import HttpResponse
 from .models import Contact
 
 # Create your views here.
+
+def splash(request):
+    #return HttpResponse("hello world")
+    return render(request, 'splash.html',{})
+
 def index(request):
-    #return HttpResponse('hello world')
     contacts = Contact.objects.all()[:50]
     query = request.GET.get("q")
     if query:
