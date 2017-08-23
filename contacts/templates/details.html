@@ -3,7 +3,8 @@
   <li>Date Added to System: {{contact.Date_Added_to_System}}</li>
   <h2>{{contact.Name}}</h2>
   <li>Department: {{contact.Department}}</li>
-  <li>Manager: {{contact.Manager}}</li>
+  <li>Manager: <a href="/contacts/?q={{contact.Manager|urlencode}}">{{contact.Manager}}</a> </li>
+  <!-- <li>Manager: {{contact.Manager}}</li> -->
   <br>
   <li>Work Contact Number: {{contact.Work_Contact_Number}}</li>
   <li>Personal Contact Number: {{contact.Personal_Contact_Number}}</li>
