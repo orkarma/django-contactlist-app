@@ -20,4 +20,5 @@ urlpatterns = [
     #url(r'^$', include('contacts.urls')),
     url(r'^contacts/', include('contacts.urls')),
     url(r'^admin/', admin.site.urls),
+    #url(r'^search/', include('search.urls'))
 ]

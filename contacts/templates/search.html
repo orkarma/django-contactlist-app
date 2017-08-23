@@ -1,0 +1,19 @@
+{% include 'partials/header.html' %}
+
+    <ul>
+
+      <form method='get' action=''>
+        <input type='text' name='q' placeholder='Search Contacts..'/>
+        <input type='submit' value='Search'/>
+      </form>
+
+      <ul>
+        <br>
+        {% for contact in query %}
+        <li><a href="/contacts/details/{{query.id}}">{{query.Name}}</a></li>
+        {% endfor %}
+      </ul>
+
+    </ul>
+
+{% include 'partials/footer.html' %}
